@@ -114,19 +114,11 @@ Giftie는 사용자가 받은 선물 정보를 입력하거나 캡처 이미지�
 
 ## 6. 전체 시스템 구조
 
-```mermaid
-flowchart LR
-    User[사용자] --> FE[FE<br/>Next.js 모바일 웹앱]
-    FE -->|HTTPS / JSON| BE[BE<br/>Spring Boot API]
-    BE --> DB[(MySQL)]
-    BE --> S3[(AWS S3)]
-    BE -->|SSE| FE
-    BE -->|X-API-KEY / JSON| AI[AI-Service<br/>FastAPI]
-    AI --> Qwen[Qwen<br/>추천·메시지]
-    AI --> Tavily[Tavily<br/>실상품 검색]
-    AI -. 이미지 분석 구현 예정 .-> Vision[Vision Model]
-    AI -. 캘린더 연동 예정 .-> Google[Google Calendar MCP]
-```
+![Giftie 전체 시스템 구조](docs/images/giftie-system-architecture.png)
+
+FE는 BE만 호출하고, BE가 데이터 저장소와 AI-Service를 조정합니다. AI-Service는
+Qwen 추천과 Tavily 실상품 검색을 실행하며 이미지 분석과 Google Calendar MCP는
+추후 연동 영역으로 구분했습니다.
 
 ### 시스템별 역할
 
