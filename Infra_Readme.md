@@ -83,6 +83,15 @@ main push → GitHub Actions
 
 FE는 Vercel의 Git 연동을 통해 별도 파이프라인으로 자동 배포됩니다.
 
+
+GitHub Actions를 통해 아래 파이프라인으로 AI-Service를 배포합니다.
+
+```
+main push → GitHub Actions
+   → GHCR(GitHub Container Registry)에 push
+   → EC2에 SSH 접속, 최신 Git Repo pull 후 restart.sh 파일 가동
+```
+
 ## Directory Structure (EC2)
 
 ```
