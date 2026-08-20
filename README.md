@@ -8,6 +8,7 @@ Giftie는 생일선물, 감사 선물, 부조금처럼 사람 사이에서 주�
 기록·일정·알림·추천에 필요한 데이터를 한 번의 입력으로 준비하는 것을 목표로 합니다.
 
 [Giftie 바로가기](https://giftie.site/)
+![](https://litter.catbox.moe/tcovf4oc5rq3fpu3.png)
 
 ## 문서 바로가기
 
