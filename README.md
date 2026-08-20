@@ -12,6 +12,7 @@ Giftie는 생일선물, 감사 선물, 부조금처럼 사람 사이에서 주�
 - [프론트엔드 상세 문서](FE_Readme.md)
 - [백엔드 상세 문서](BE_Readme.md)
 - [AI Service 상세 문서](AI_Service_Readme.md)
+- [Infra 상세 문서](Infra_Readme.md)
 - 실제 소스 폴더: `../FE`, `../BE`, `../AI-Service`
 
 ## 1. 해커톤 주제
